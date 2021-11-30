@@ -176,6 +176,8 @@ def calculate_frechet_distance(mu1, sigma1, mu2, sigma2, eps=1e-6):
 
     assert mu1.shape == mu2.shape, \
         'Training and test mean vectors have different lengths'
+   print(sigma1.shape)
+   print(sigma2.shape)
     assert sigma1.shape == sigma2.shape, \
         'Training and test covariances have different dimensions'
 
