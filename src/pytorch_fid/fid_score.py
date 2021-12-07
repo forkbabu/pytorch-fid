@@ -124,7 +124,7 @@ def get_activations(files, model, batch_size=50, dims=2048, device='cpu',
 
     start_idx = 0
 
-    for batch in tqdm(dataloader):
+    for batch in tqdm(dataloader,disable=True):
         batch = batch.to(device)
 
         with torch.no_grad():
